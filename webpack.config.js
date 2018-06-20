@@ -1,5 +1,4 @@
 const webpack = require('webpack')
-
 module.exports = {
     entry: './ex/index.jsx',
     output: {
@@ -9,6 +8,9 @@ module.exports = {
     devServer: {
         port: 8080,
         contentBase: './public'
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx']
     },
     module: {
         loaders: [{
